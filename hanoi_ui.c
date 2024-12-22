@@ -57,13 +57,9 @@ void hanoi_ui_3discos(int* posicion_discos) {
         {0,0,0}
     };
     
-    printf("%d\n", posicion_discos[0]);
-    printf("%d\n", posicion_discos[1]);
-    printf("%d\n", posicion_discos[2]);
     
     // intercambio de posicioenes entre origrn y destino
     arr[t1][posicion_discos[2] - 1] = 3;
-    printf("%d\n" , arr[t1][posicion_discos[2] - 1]);
     //verificacion de alturas dentro del array
 	if (posicion_discos[2] == posicion_discos[1] || posicion_discos[2] == posicion_discos[0]){
 		t1=1;
@@ -75,7 +71,6 @@ void hanoi_ui_3discos(int* posicion_discos) {
 	if (posicion_discos[1] == posicion_discos[0]){
 		t1 = 0;
 	}
-	printf("%d\n" , arr[t1][posicion_discos[2] - 1]);
 	// intercambio de posicioenes entre origrn y destino
 	arr[t1][posicion_discos[0] - 1] = 1;
 	// iteracion para la eliminacion de los espacios sobrandes debajo de cada disco
